@@ -1,20 +1,93 @@
-<<<<<<< HEAD
-# weather_app
+# 🌤️ Weather App
 
-A new Flutter project.
+A beautifully designed Flutter weather app with a deep purple dark theme, real-time weather data, and a smooth draggable detail sheet — built with clean MVC architecture.
 
-## Getting Started
+<br/>
 
-This project is a starting point for a Flutter application.
+## 📱 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+> _Add your screenshots here_
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<br/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# WeatherApp
->>>>>>> 655fa0f21dc2fe4f6c4150cd89c02c3147be0d9e
+## ✨ Features
+
+- 🔍 **City Search** — Look up current weather for any city worldwide
+- 🌡️ **Real-time Weather** — Temperature, feels like, high/low, and conditions
+- 🕐 **Hourly Forecast** — 3-hour interval forecast with precipitation probability
+- 💨 **Detailed Stats** — Air quality index, UV index, wind compass, sunrise/sunset arc, and rainfall
+- 🎨 **Pixel-perfect UI** — Glassmorphism cards, starry gradient background, and animated draggable sheet
+- 🏙️ **Default City** — Opens with Islamabad on first launch
+
+<br/>
+
+## 🏗️ Architecture
+
+```
+lib/
+├── Model/
+│   └── weather_model.dart       # Data models (WeatherModel, Main, Wind, Sys…)
+├── Controller/
+│   └── weather_controller.dart  # API calls, state management (ChangeNotifier)
+└── View/
+    └── home_screen.dart         # Full UI with persistent DraggableScrollableSheet
+```
+
+The app follows **MVC** with `provider` for state management — the controller fetches from three OpenWeatherMap endpoints (current weather, 5-day forecast, air pollution) and notifies the view.
+
+<br/>
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter SDK `>=3.0.0`
+- An [OpenWeatherMap](https://openweathermap.org/api) free API key
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+flutter pub get
+```
+
+Add your API key in `weather_controller.dart`:
+```dart
+final String _apiKey = 'YOUR_API_KEY_HERE';
+```
+
+Add your house asset in `pubspec.yaml`:
+```yaml
+assets:
+  - assets/images/house.png
+```
+
+Then run:
+```bash
+flutter run
+```
+
+<br/>
+
+## 📦 Dependencies
+
+| Package | Purpose |
+|--------|---------|
+| `provider` | State management |
+| `http` | REST API calls |
+
+<br/>
+
+## 🌐 APIs Used
+
+- `GET /data/2.5/weather` — Current weather
+- `GET /data/2.5/forecast` — 5-day / 3-hour forecast
+- `GET /data/2.5/air_pollution` — Air quality index
+
+All from [OpenWeatherMap](https://openweathermap.org/api).
+
+<br/>
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
