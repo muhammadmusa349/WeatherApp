@@ -1,3 +1,4 @@
+
 # 🌤️ Weather App
 
 A beautifully designed Flutter weather app with a deep purple dark theme, real-time weather data, and a smooth draggable detail sheet — built with clean MVC architecture.
@@ -6,7 +7,7 @@ A beautifully designed Flutter weather app with a deep purple dark theme, real-t
 
 ## 📱 Screenshots
 
-> _Add your screenshots here_
+<img width="702" height="1600" alt="WhatsApp Image 2026-06-11 at 2 27 37 PM" src="https://github.com/user-attachments/assets/ad8490f3-a1c7-411c-b50e-8d345158a48c" />
 
 <br/>
 
