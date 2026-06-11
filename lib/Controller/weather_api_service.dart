@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:weather_app/Model/weather_model.dart';
 
@@ -14,8 +15,8 @@ class WeatherController extends ChangeNotifier {
   bool isSearchFieldVisible = false; // Tracks the visibility of the search input field
   String errorMessage = '';
 
-  // Your unique OpenWeatherMap API Key
-  final String _apiKey = '8122eb63aedc52b9cc2103933969739a';
+  // API key loaded from .env file — never hardcode secrets in source code
+  final String _apiKey = dotenv.env['WEATHER_API_KEY'] ?? '';
 
   /// Fetches weather data, forecast, and air quality for a specific city. Defaults to Islamabad.
   Future<void> fetchWeather(String s, {String city = "Islamabad"}) async {

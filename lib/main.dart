@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/Controller/weather_api_service.dart';
 import 'package:weather_app/View/home_screen.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -24,4 +26,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

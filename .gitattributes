@@ -1,0 +1,8 @@
+# Tell GitHub to ignore Flutter platform boilerplate for language detection
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+web/** linguist-vendored
+ios/** linguist-vendored
+android/** linguist-vendored
+*.g.dart linguist-generated
