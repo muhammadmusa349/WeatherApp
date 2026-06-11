@@ -5,9 +5,11 @@ A beautifully designed Flutter weather app with a deep purple dark theme, real-t
 
 <br/>
 
+
 ## 📱 Screenshots
 
 <img width="702" height="1600" alt="WhatsApp Image 2026-06-11 at 2 27 37 PM" src="https://github.com/user-attachments/assets/ad8490f3-a1c7-411c-b50e-8d345158a48c" />
+<img width="702" height="1600" alt="WhatsApp Image 2026-06-11 at 2 31 54 PM" src="https://github.com/user-attachments/assets/3a047b4e-e9b4-4656-b432-7bfcc92059ae" />
 
 <br/>
 
